@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Address Autocomplete</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdM6g5D-1AA0FOwC5PVdI6BdILJLRjKjM&libraries=places"></script>
+
+</head>
+
+<body>
+  <div class="input-container">
+    <input type="text" id="address-input" placeholder="Type an address...">
+    <span id="dynamic-placeholder"></span>
+    <div class="autocomplete-container" id="autocomplete-container">
+      <!-- Autocomplete suggestions will be displayed here -->
+    </div>
+  </div>
+</body>
+
+</html>

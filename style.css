@@ -1,0 +1,53 @@
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.0rem;
+  border: none;
+  border-bottom: 2px solid #3498db;
+  outline: none;
+  transition: border-color 0.3s;
+   font-family: 'Times New Roman', Times, serif;
+}
+.input-container input:focus {
+  border-color: #2ecc71;
+}
+.autocomplete-container {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.autocomplete-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.autocomplete-item:hover {
+  background-color: #f9f9f9;
+}
+/* Remove the input-container:not(:empty) input CSS rule */
+.input-container input:not(:placeholder-shown) {
+  border-color: #2ecc71;
+}
+#address-input {
+  width: 100%;
+  padding-right: 30px; /* Ensure text doesn't overlap with dynamic placeholder */
+}
+
+#dynamic-placeholder {
+  position: absolute;
+  left: 12px; /* Align with the text inside the input */
+  top: 24%;
+  bottom: 0;
+  line-height: 20px; /* Adjust to match your input's height */
+  color: #ccc; /* Placeholder-like color */
+  pointer-events: none; /* Allows click events to pass through to the input */
+  font-family: 'Times New Roman', Times, serif;
+}
